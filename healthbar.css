@@ -1,0 +1,65 @@
+/* Health bar container */
+.health-bar-container {
+    width: 80%;
+    margin: 20px auto;
+    height: 40px;
+    background-color: #ddd; /* Background for total health */
+    border-radius: 20px;
+    position: relative;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Health bar itself */
+.health-bar {
+    height: 100%;
+    background-color: #28a745; /* Green for healthy section */
+    border-radius: 20px 0 0 20px;
+    width: 0%; /* Will be dynamically updated */
+    transition: width 0.5s ease-in-out;
+}
+
+/* Animating health loss */
+.low-health {
+    background-color: #dc3545; /* Red for low health */
+}
+
+/* Health indicator styling */
+.health-indicator {
+    position: absolute;
+    top: -40px; /* Position above the bar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    transition: left 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Health percentage text */
+#healthPercentage {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Arrow styling */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

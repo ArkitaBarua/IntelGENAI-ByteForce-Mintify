@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Popup Example</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>Welcome to the Application</h1>
+        <button id="loginBtn">Login</button>
+
+        <div id="profile" class="hidden">
+            <h2>User Profile</h2>
+            <p id="userProfile"></p>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="loginPopup" class="popup hidden">
+            <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <h2>Login</h2>
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button id="signinBtn">Sign In</button>
+                <p id="errorMsg" class="error hidden"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

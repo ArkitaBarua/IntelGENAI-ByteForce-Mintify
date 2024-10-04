@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  <div class="card-slider-container">
+    <!-- Left Button -->
+    <button class="slider-btn left-btn" onclick="moveLeft()">&#10094;</button>
+
+    <!-- Card Slider -->
+    <div class="cards-wrapper">
+      <div class="cards-row" id="cardsRow">
+        <!-- 10 Cards -->
+        <button class="card">Card 1</button>
+        <button class="card">Card 2</button>
+        <button class="card">Card 3</button>
+        <button class="card">Card 4</button>
+        <button class="card">Card 5</button>
+        <button class="card">Card 6</button>
+        <button class="card">Card 7</button>
+        <button class="card">Card 8</button>
+        <button class="card">Card 9</button>
+        <button class="card">Card 10</button>
+      </div>
+    </div>
+
+    <!-- Right Button -->
+    <button class="slider-btn right-btn" onclick="moveRight()">&#10095;</button>
+  </div>
+
+  <script src="test.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+       body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 0 auto;
+        }
+
+        .header-section {
+            position: relative;
+            text-align: center;
+          }
+          
+          .background-pic {
+            width: 1066px;
+            height: 356px;
+          }
+          
+          .icon-pic {
+            position: absolute;
+            bottom: -50px; /* Adjust based on desired overlap */
+            left: 20%; /* Centers the icon horizontally */
+            transform: translateX(-50%);
+            width: 120px; /* Adjust size of the icon */
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white; /* Optional border */
+          }
+          
+          /* Profile Section */
+          .profile-section {
+            margin-left: 25%;
+            margin-top: 20px; /* Adjust to provide space for the icon */
+          }
+          
+          .profile-name {
+            font-size: 32px;
+            margin: 10px 0;
+          }
+          
+          .profile-info {
+            font-size: 16px;
+            margin: 5px 0;
+          }
+          
+          .profile-email {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-bottom: 1px solid white;
+          }
+          
+          .container {
+            padding: 20px;
+          }
+          
+          .gallery {
+            display: flex;
+            flex-direction: column; /* Aligns items in a column */
+            align-items: center; /* Centers the rectangles horizontally */
+            margin-top: 50px;
+            gap: 20px; /* Adds space between the rectangles */
+          }
+          
+          .container1, .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .container2 {
+            margin-top: 200px; /* Space below profile section */
+          }
+          
+          .rectangle11 {
+            width: 992px;
+            height: 183px;
+            background: rgba(217, 217, 217, 0);
+            border: 2px solid #D791EB;
+            display: flex;
+            flex-direction: row; /* Stack children vertically */
+            justify-content: space-between; /* Space out the content */
+            box-sizing: border-box;
+            padding: 3px;
+        }
+          
+          .rectangle6 {
+            width: 243px;
+            height: 173px;
+            margin-right: 20px; /* Space between the image and text */
+            overflow: hidden;
+          }
+          
+          .content-wrapper {
+            display: flex;
+            flex-direction: column; /* Stack title and subtitle vertically */
+            justify-content: flex-start; /* Align to the top */
+            margin-right: 160px;
+            margin-top: 4px;
+        }
+        
+          
+          .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px; /* Space between title and subtitle */
+          }
+          
+          .subtitle {
+            font-size: 16px;
+            color: #A5A5A5; /* Light grey for the subtitle text */
+          }
+          
+          .buy-section {
+            display: flex;
+            justify-content: flex-end; /* Align to the right */
+            align-items: center; /* Center items vertically */
+            margin-top: 130px; /* Pushes it to the bottom of the rectangle */
+        }
+          .cc {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 15px; /* Space between price and button */
+          }
+          
+          .cartButton {
+            background: #D791EB;
+            border-radius: 8px;
+            padding: 10px 10px;
+            cursor: pointer;
+          }
+          
+          .buy {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+          }
+          
+        /*extra*/
+
+        .artwork {
+            width: 48%;
+            margin-bottom: 20px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .artwork img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .artwork h3 {
+            margin-top: 10px;
+        }
+
+        .artwork p {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .buy-button {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  

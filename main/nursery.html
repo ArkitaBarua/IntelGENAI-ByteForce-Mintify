@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Pinterest Cards</title>
+  <link rel="stylesheet" href="nursery.css">
+</head> 
+<body>
+
+  <!-- Navbar -->
+  <div class="header">
+    <div class="logo">
+      <!-- Logo can be added here -->
+    </div>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <img src="search-icon.png" alt="Search Icon" class="search-icon">
+    </div>
+    <div class="action-section" style="display: flex; align-items: center;"> <!-- Center items vertically -->
+      <div class="purple-link" onclick="location.href='main.html'">
+        Discover
+      </div>
+      <div class="purple-link" onclick="location.href='Create.html'">
+        Create
+      </div>
+      <button class="my-garden-button">MY GARDEN</button>
+      <!-- Profile button (initially hidden) -->
+      <button class="profile-button" id="profileBtn">
+        <img alt="Profile" class="profile-pic" id="profilePic">
+      </button> 
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    <h1 style="margin-top:100px;color:white;margin-left:280px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;font-size:80px;">NURSERY</h1>
+  <!-- Card Container -->
+  <div class="card-container" id="cardContainer">
+    <!-- Dynamically generated cards will go here -->
+  </div>
+
+  <script src="nursery.js"></script>
+
+</body>
+</html>

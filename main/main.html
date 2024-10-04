@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Logo, Search Bar, and Buttons</title>
+  <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <div class="header">
+    <div class="logo">
+      <!-- Logo can be added here -->
+    </div>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <img src="search-icon.png" alt="Search Icon" class="search-icon">
+    </div>
+    <div class="action-section" style="display: flex; align-items: center;"> <!-- Center items vertically -->
+      <div class="purple-link" onclick="location.href='about.html'">
+        Discover
+      </div>
+      <div class="purple-link" onclick="location.href='Create.html'">
+        Create
+      </div>
+      <button class="my-garden-button" id="myGardenBtn" onclick="location.href='mygarden.html'">MY GARDEN</button>
+      <button class="button login-button" id="loginBtn">LOGIN</button>
+      <!-- Profile button (initially hidden) -->
+      <button class="profile-button" id="profileBtn">
+        <img src="default-profile.jpg" alt="Profile" class="profile-pic" id="profilePic">
+      </button>
+        </div>
+    </div>
+
+    <!-- Login Popup -->
+    <div class="popuplogin" id="loginPopup">
+        <div class="popuplogin-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit">LOGIN</button>
+            </form>
+            <p>Don't have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+  
+
+  <!-- main content starts -->
+  <div class="content">
+    <img src="mintify.gif" class="mintifygif">
+    <div class="subheadingalign">
+        <div class="subheading">
+            ORGANIZATIONS
+        </div>
+        <div><button class="headingarrow"><img src="R.png" style="height:40px;width:40px" alt="button image" </button></div>
+    </div>
+
+    <div class="carousel-container">
+        <button id="prev-btn-org" class="carousel-btn">←</button>
+        <div class="carousel">
+          <div class="card-container" id="card-container-org">
+            <!-- Cards will be dynamically generated here for organizations -->
+          </div>
+        </div>
+        <button id="next-btn-org" class="carousel-btn">→</button>
+      </div>
+      
+      <div class="subheadingalign">
+        <div class="subheading">
+            INDIE ARTISTS
+        </div>
+        <div><button class="headingarrow"><img src="R.png" style="height:40px;width:40px" alt="button image" /></button></div>
+      </div>
+      
+      <div class="carousel-container">
+        <button id="prev-btn-indie" class="carousel-btn">←</button>
+        <div class="carousel">
+          <div class="card-container" id="card-container-indie">
+            <!-- Cards will be dynamically generated here for indie artists -->
+          </div>
+        </div>
+        <button id="next-btn-indie" class="carousel-btn">→</button>
+      </div>
+      <div class="subheadingalign">
+        <div class="subheading">
+            Explore more...
+        </div>
+        
+    </div>
+    <div id="gallery" class="gallery">
+        <!-- Dynamic content will be injected here -->
+    </div>
+    <button class="view-more-btn">View more</button>
+      <!-- Popup structure -->
+    <div id="popup">
+        <button type="button" id="closeButton">&times;</button> <!-- Close button -->
+        <div id="popupContent" class="popup-content">
+            <img id="popupImage" src="" alt="Artwork Image" class="popup-image" />
+            <h3 id="imageTitle">Image Name</h3>
+            <div id="popupInfo">This is default content.</div>
+            <!-- Additional buttons inside the popup -->
+            <div class="popup-buttons">
+                <button class="popup-action" id="action1">Action 1</button>
+                <button class="popup-action" id="action2">Action 2</button>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 40px;height:2px;width:auto;background: white;"></div>
+    <div class="subheadingalign" style="margin-top:20px">
+        <div class="subheading">Contact us...</div>
+    </div>
+</div>
+<script src="mainjs.js"></script>
+</body>
+</html>

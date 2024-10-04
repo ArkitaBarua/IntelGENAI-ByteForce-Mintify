@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Carousel with Flip Effect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Container for Organizations -->
+  <section class="category">
+    <h2>Organizations ></h2>
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollLeft('orgCarousel')">←</button>
+      <div class="carousel" id="orgCarousel">
+        <!-- Cards for Organizations -->
+        <div class="card" style="width: 181px; height: 251px; background: rgba(66, 107, 31, 0); border-radius: 10px; border: 4px #D791EB solid; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+            <div class="card-inner">
+                <div class="card-front">
+            <div class="CartButton" style="width: 181px; height: 251px; position: relative; background: rgba(66, 107, 31, 0); border-radius: 4px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <img class="Ellipse1" style="width: 144px; height: 140px; border-radius: 9999px" src="https://via.placeholder.com/144x140" />
+              <div class="Pinterest" style="width: 126px; height: 28px; text-align: center; color: #D791EB; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word">PINTEREST</div>
+              <div class="Rectangle7" style="width: 47px; height: 22px; background: rgba(217, 217, 217, 0.10); border-radius: 20px; border: 0.50px #FFFAFA solid"></div>
+              <div class="Music" style="width: 47px; height: 22px; text-align: center; color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 15.60px; word-wrap: break-word">music</div>
+              <div class="Rectangle7" style="width: 54px; height: 22px; background: rgba(217, 217, 217, 0.10); border-radius: 20px; border: 0.50px #FFFAFA solid"></div>
+              <div class="Pottery" style="width: 47px; height: 22px; text-align: center; color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 15.60px; word-wrap: break-word">pottery</div>
+            </div>
+          </div>
+            </div>
+          </div>
+        
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="src.png" alt="Logo">
+              <p>PINTEREST</p>
+            </div>
+            <div class="card-back">
+              <p>Backside Content</p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the cards as necessary -->
+      </div>
+      <button class="arrow right" onclick="scrollRight('orgCarousel')">→</button>
+    </div>
+  </section>
+
+  <!-- Container for Indie Artists -->
+  <section class="category">
+    <h2>Indie Artists ></h2>
+    <div class="carousel-container">
+      <button class="arrow left" onclick="scrollLeft('artistCarousel')">←</button>
+      <div class="carousel" id="artistCarousel">
+        <!-- Cards for Indie Artists -->
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="src.png" alt="Logo">
+              <p>PINTEREST</p>
+            </div>
+            <div class="card-back">
+              <p>Backside Content</p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat the cards as necessary -->
+      </div>
+      <button class="arrow right" onclick="scrollRight('artistCarousel')">→</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<div class="card" style="width: 181px; height: 251px; background: rgba(66, 107, 31, 0); border-radius: 10px; border: 4px #D791EB solid; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+    <div class="CartButton" style="width: 181px; height: 251px; position: relative; background: rgba(66, 107, 31, 0); border-radius: 4px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+      <img class="Ellipse1" style="width: 144px; height: 140px; border-radius: 9999px" src="https://via.placeholder.com/144x140" />
+      <div class="Pinterest" style="width: 126px; height: 28px; text-align: center; color: #D791EB; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word">PINTEREST</div>
+      <div class="Rectangle7" style="width: 47px; height: 22px; background: rgba(217, 217, 217, 0.10); border-radius: 20px; border: 0.50px #FFFAFA solid"></div>
+      <div class="Music" style="width: 47px; height: 22px; text-align: center; color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 15.60px; word-wrap: break-word">music</div>
+      <div class="Rectangle7" style="width: 54px; height: 22px; background: rgba(217, 217, 217, 0.10); border-radius: 20px; border: 0.50px #FFFAFA solid"></div>
+      <div class="Pottery" style="width: 47px; height: 22px; text-align: center; color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 15.60px; word-wrap: break-word">pottery</div>
+    </div>
+  </div>
+<h1>here</h1>
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div class="card" style="width: 181px; height: 251px; background: rgba(66, 107, 31, 0); border-radius: 10px; border: 4px #D791EB solid; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+            <div class="CartButton" style="width: 181px; height: 251px; position: relative; background: rgba(66, 107, 31, 0); border-radius: 4px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+              <img class="Ellipse1" style="width: 144px; height: 140px; border-radius: 9999px" src="https://via.placeholder.com/144x140" />
+              <div class="Pinterest" style="width: 126px; height: 28px; text-align: center; color: #D791EB; font-size: 20px; font-family: Inter; font-weight: 600; line-height: 26px; word-wrap: break-word">PINTEREST</div>
+              <div style="display:flex; justify-content: center";>
+                <div style="display:flex;justify-content:flex-start;">
+              <div class="Rectangle7" style="padding:2px;width: 47px; height: 22px; background: rgba(217, 217, 217, 0.10); border-radius: 20px; border: 0.50px #FFFAFA solid;text-align: center; color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 15.60px; word-wrap: break-word">music</div>
+              <div class="Rectangle7" style="width: 54px; height: 22px; background: rgba(217, 217, 217, 0.10); border-radius: 20px; border: 0.50px #FFFAFA solid;text-align: center; color: white; font-size: 12px; font-family: Inter; font-weight: 400; line-height: 15.60px; word-wrap: break-word">pottery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card-back">
+        <p>Backside Content</p>
+      </div>
+    </div>
+  </div>
+  

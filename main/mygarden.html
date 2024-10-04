@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Pinterest Cards</title>
+  <link rel="stylesheet" href="mygarden.css">
+</head> 
+<body>
+
+  <!-- Navbar -->
+  <div class="header">
+    <div class="logo">
+      <!-- Logo can be added here -->
+    </div>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <img src="search-icon.png" alt="Search Icon" class="search-icon">
+    </div>
+    <div class="action-section" style="display: flex; align-items: center;"> <!-- Center items vertically -->
+      <div class="purple-link" onclick="location.href='main.html'">
+        Discover
+      </div>
+      <div class="purple-link" onclick="location.href='Create.html'">
+        Create
+      </div>
+      <button class="my-garden-button">MY GARDEN</button>
+      <!-- Profile button (initially hidden) -->
+      <button class="profile-button" id="profileBtn">
+        <img alt="Profile" class="profile-pic" id="profilePic">
+      </button> 
+        </div>
+    </div>
+    <div style="background-color:rgba(0, 0, 0, 0.308);">
+    <div style="display:flex;justify-content:flex-start">
+      <h1 style="color:green;margin-top:120px;margin-left:180px;">MY GARDEN</h1>
+    <h3 style="margin-top:130px;margin-left:50px;color:white;">Health </h3>
+    <div class="health-bar-container">
+      <div id="healthBar" class="health-bar"></div>
+      <div id="healthIndicator" class="health-indicator">
+        <span id="healthPercentage">0%</span>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+    <div><button style="margin-top:120px;">Nursery</button></div>
+    </div>
+    <br></br>
+    </div>
+  <!-- Card Container -->
+  <div class="card-container" id="cardContainer">
+    <!-- Dynamically generated cards will go here -->
+  </div>
+
+  <script src="mygarden.js"></script>
+
+</body>
+</html>

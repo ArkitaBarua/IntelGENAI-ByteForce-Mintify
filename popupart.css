@@ -1,0 +1,92 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gallery grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hover-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+.gallery-item:hover .hover-icons {
+    display: block;
+}
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.artist-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Popup styling */
+#popup {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    max-height: 80%;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: bottom 0.5s ease;
+    overflow-y: scroll;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#closeButton:hover {
+    color: lightgray;
+}
+
+.popup-image {
+    max-width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Show the popup */
+#popup.show {
+    bottom: 0;
+}

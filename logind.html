@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Popup</title>
+    <link rel="stylesheet" href="logind.css">
+</head>
+<body>
+    <div class="container">
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <div class="popup" id="loginPopup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit">LOGIN</button>
+            </form>
+            <p>Don't have an account? <a href="#">Sign in</a></p>
+        </div>
+    </div>
+
+    <script src="logind.js"></script>
+</body>
+</html>

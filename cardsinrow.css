@@ -1,0 +1,109 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the carousel container */
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  
+  .carousel {
+    width: 940px; /* Shows 5 cards at a time (5 * 188px) */
+    overflow: hidden;
+  }
+  
+  .card-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Styling each card */
+  .card {
+    width: 181px;
+    height: 251px;
+    background: rgba(66, 107, 31, 0);
+    border-radius: 10px;
+    border: 4px #D791EB solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 10px;
+  }
+  
+  .CartButton {
+    width: 181px;
+    height: 251px;
+    position: relative;
+    background: rgba(66, 107, 31, 0);
+    border-radius: 4px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Ellipse1 {
+    width: 144px;
+    height: 140px;
+    border-radius: 9999px;
+  }
+  
+  .Pinterest {
+    width: 126px;
+    height: 28px;
+    text-align: center;
+    color: #D791EB;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
+  
+  .Rectangle7 {
+    padding: 2px;
+    width: 47px;
+    height: 22px;
+    background: rgba(217, 217, 217, 0.10);
+    border-radius: 20px;
+    border: 0.50px #FFFAFA solid;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 15.60px;
+    word-wrap: break-word;
+    margin-right: 5px;
+  }
+  
+  /* Carousel button styling */
+  .carousel-btn {
+    background-color: #D791EB;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .carousel-btn:hover {
+    background-color: #a86cc3;
+  }
+  
+  /* Enlarge card on hover */
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  

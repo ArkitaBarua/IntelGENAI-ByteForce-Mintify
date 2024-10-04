@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINTIFY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin:0px;">
+  <div class="header">
+    <div class="logo">
+      <!-- Logo can be added here -->
+    </div>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <img src="search-icon.png" alt="Search Icon" class="search-icon">
+    </div>
+    <div class="action-section" style="display: flex; align-items: center;"> <!-- Center items vertically -->
+      <div class="purple-link" onclick="location.href='main.html'">Discover</div>
+      <div class="purple-link" onclick="location.href='Create.html'">Create</div>
+      <button class="my-garden-button">MY GARDEN</button>
+      <button class="button login-button">LOGIN</button>
+    </div>
+  </div>
+  
+  <link rel="stylesheet" href="create.css">  
+  <div class="container">
+    <div class="full-page-gif">
+        <img src="nft.gif" alt="Illustration" class="full-gif">
+    </div>
+
+          <div class="steps">
+              <div class="step1">
+                  <h2>STEP 1</h2>
+                  <p>Give your NFT a name...</p>
+                  <div class="parallel">
+                    <div class="input-container">
+                        <textarea class="input-box" placeholder="Enter name"></textarea>
+                        <button class="enter-button">ENTER</button>
+                    </div>
+                    
+                </div>
+                
+              </div>
+        
+              <div class="step2">
+                <h2>STEP 2</h2>
+                <p>Give your price...</p>
+                <div class="parallel1">
+                  <input type="text" class="input-box" placeholder="Enter your price">
+                  <button class="enter-button">ENTER</button>
+                </div>
+              </div>
+  
+              <div class="step3">
+                  <h2>STEP 3</h2>
+                  <p>Give your description...</p>
+                  <div class="parallel1">
+                  <textarea class="input-box" placeholder="Enter description"></textarea>
+                  <button class="enter-button">ENTER</button>
+                  </div>
+              </div>
+
+              <div class="step4">
+                <h2>STEP 4</h2>
+                
+                  <p>Upload your work...</p>
+                  <div class="upload-box">
+                      <label for="upload-file" class="upload-label">
+                          <i class="upload-icon"></i> Upload
+                      </label>
+                      <input type="file" id="upload-file" class="upload-input" accept="image/*,video/*,.gif">
+                  </div>
+              
+            </div>
+          </div>
+          <script src="maincreate.js"></script>
+  </body>
+  </html>
+  

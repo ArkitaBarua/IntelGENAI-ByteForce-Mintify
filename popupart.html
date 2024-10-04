@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery with Popup</title>
+    <link rel="stylesheet" href="popupart.css">
+</head>
+<body>
+    <!-- Gallery container -->
+    <div id="gallery" class="gallery-grid"></div>
+
+    <!-- Popup structure -->
+    <div id="popup">
+        <button id="closeButton">&times;</button> <!-- Close button -->
+        <div id="popupContent" class="popup-content">
+            <img id="popupImage" src="" alt="Artwork Image" class="popup-image" />
+            <h3 id="imageTitle">Image Name</h3>
+            <div id="popupInfo">This is default content.</div>
+            <!-- Additional buttons inside the popup -->
+            <div class="popup-buttons">
+                <button class="popup-action" id="action1">Action 1</button>
+                <button class="popup-action" id="action2">Action 2</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popupart.js"></script>
+</body>
+</html>
